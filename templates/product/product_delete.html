@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+{% extends 'base.html' %}
+{% block content %}
+
+<html lang="en">
+<head>
+    <style>
+#grad1 {
+  height: 1000px;
+ background: rgb(97,151,244);
+background: radial-gradient(circle, rgba(97,151,244,1) 16%, rgba(55,236,155,0.30015756302521013) 60%);
+}
+</style>
+    <meta charset="UTF-8">
+    <title>Product remove</title>
+</head>
+<body>
+
+<form action='.' method='POST'> {% csrf_token %}
+    <h1> Delete a Product  "{{ object.title }}"</h1>
+
+    <p><input type = 'submit' value="Yes" /> <a href = '../'>Cancel</a></p>
+</form>
+
+
+</body>
+</html>
+
+{% endblock %}

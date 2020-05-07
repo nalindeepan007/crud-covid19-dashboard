@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+{% extends 'base.html' %}
+{% block content %}
+<html>
+<head>
+<style>
+#grad1 {
+  height: 1200px;
+background-color: #FFFFFF;
+background-image: linear-gradient(180deg, #FFFFFF 0%, #00d490 50%, #4578da 100%);
+
+}
+#grad2{
+margin-left: 120px;
+}
+</style>
+</head>
+<body textcolor = 'white'>
+<div id="grad1">
+    <div id="grad2">
+<h1>Covid-19 Essentials dashboard</h1>
+
+by Nalin Deepan
+{{reuest.user}}
+
+    <p><center> Home page  </center> </p>
+        </div>
+</div>
+</body>
+</html>
+{% endblock %}

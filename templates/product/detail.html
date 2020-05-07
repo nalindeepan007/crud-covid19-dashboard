@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% block content %}
+<html lang="en">
+<head>
+    <style>
+#grad1 {
+  height: 1000px;
+ background-color: #8c29dc;
+background-image: linear-gradient(0deg, #8c29dc 25%, #f6fcfd 100%);
+
+
+font-size: 25px;
+
+
+}
+#grad2{ margin-left: 120px;
+margin-right: 100px;
+border: 10px solid black;
+}
+</style>
+    <meta charset="UTF-8">
+    <title> prod details</title>
+</head>
+<body>
+<div id="grad1">
+<div id="grad2">
+
+<h1> Product Details </h1>
+   Name: {{object.title}} <br>
+   Description: {{object.description}}<br>
+   Price: {{object.price}}<br>
+    {{object.summary}}<br>
+
+</div>
+    <a href="update/"><button type="button" class="btn btn-primary">Update</button> </a>
+    <a href="delete/"><button type="button" class="btn btn-danger">Delete</button> </a>
+
+    </div>
+
+</body>
+</html>
+{% endblock %}

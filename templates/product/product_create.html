@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+{% extends 'base.html' %}
+{% block content %}
+
+
+<html lang="en">
+<head>
+    <style>
+    #grad1{height: 1000px
+
+
+      background-color: #FFFFFF;
+background-image: linear-gradient(90deg, #FFFFFF 0%, #c184f5 50%, #12213b 100%);
+font-size: 25px;
+
+
+
+
+  margin-left: 80px;
+}
+
+    </style>
+    <meta charset="UTF-8">
+    <title>Product create</title>
+</head>
+<div id="grad1">
+
+
+<form action='.' method='POST'> {% csrf_token %}
+    {{form.as_p}}
+    <input type = 'submit' value="Save" />
+</form>
+
+</div>
+</html>
+{% endblock %}
+
+
+
